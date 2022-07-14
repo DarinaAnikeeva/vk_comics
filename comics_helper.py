@@ -7,7 +7,3 @@ def save_photos(image_url, name):
     with open(f'{name}.jpg', 'wb') as file:
         file.write(response.content)
 
-
-def create_url(method):
-    url = f"https://api.vk.com/method/{method}"
-    return url
